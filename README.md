@@ -1,4 +1,4 @@
-# Tick Tock ⏳ - Backend
+# NISB Heist - Backend
 This is a simple express app created for answer submissions of [NISB](https://www.nisb.com)'s Tick Tock event. This microservice is responsible for checking if the answer is right and incrementing the score of the participant.
 
 This project was dockerized and the image can be accessed [Here](https://hub.docker.com/r/codekulkarni/college-voyage-backend).
@@ -14,7 +14,7 @@ npm install
 
 Running in development:
 ```
-npm run devs
+npm run dev
 ```
 
 Running in production:
