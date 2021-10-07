@@ -1,0 +1,39 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: college-voyage-backend
+spec:
+  selector:
+    matchLabels:
+      app: college-voyage-backend
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: college-voyage-backend
+    spec:
+      containers:
+      - name: college-voyage-backend
+        image: codekulkarni/college-voyage-backend
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 5000
+
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: nodeservice
+spec:
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  selector:
+    app: college-voyage-backend
+status:
+  loadBalancer: {}

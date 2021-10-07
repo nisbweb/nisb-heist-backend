@@ -1,0 +1,30 @@
+{
+  "name": "nisb-heist-backend",
+  "version": "1.0.0",
+  "description": "Backemd for nisb-heist NISB event",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint --fix src",
+    "test": "mocha --exit"
+  },
+  "keywords": [],
+  "author": "sgkul000 <sgkul2000@gmail.com> (https://shreeshkulkarni.com)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.24.2",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.13",
+    "supertest": "^4.0.2"
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "question": "question_1",
+    "answers": ["instagram"]
+  },
+  {
+    "question": "question_2",
+    "answers": ["admin block", "admin building", "adminblock", "adminbuilding"]
+  },
+  {
+    "question": "question_3",
+    "answers": ["induction"]
+  },
+  {
+    "question": "question_4",
+    "answers": [
+      "hostel",
+      "Hostel",
+      "boys hostel",
+      "mens hostel",
+      "girls hostel"
+    ]
+  },
+  {
+    "question": "question_5",
+    "answers": ["something"]
+  }
+]
+
