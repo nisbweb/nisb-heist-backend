@@ -25,7 +25,7 @@ function Match(submission, answers) {
 
 router.post("/submit", async (req, res, next) => {
   console.log(req.body);
-  if (!request.body.question || !request.body.answer) {
+  if (!req.body.question || !req.body.answer) {
     return res.statue(400).json({
       error: "Invalid answer",
     });
